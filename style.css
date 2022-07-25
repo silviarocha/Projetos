@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* button (botao) */
+.btn-primary{
+    background: #1db954;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: all 400ms ease;
+}
+
+.btn-primary:hover {
+    background: #1ed760;
+    cursor: pointer;
+}
+
+.logo{
+    width: auto;
+    height: 40px;
+}
+
+/* navbar (topo) */
+#navbar{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar .navbar-container{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#navbar .navbar-container ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+#navbar .navbar-container ul li{
+    padding: 0 20px;
+    transition: all 500ms ease;
+}
+
+#navbar .navbar-container ul li:nth-child(3){
+    border-right: 1px solid #ffffff;
+}
+
+#navbar .navbar-container ul li:hover {
+    color: #1db954;
+    cursor: pointer;
+}
+
+/* Showcase (img principal) */
+#showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background: url(./img/showcase.webp) center center/cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: color;
+}
+
+#showcase .showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#showcase .showcase-container h2{
+    font-size: 5rem;   
+}
+
+#showcase .showcase-container p{
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+/* footer (rodapé)*/
+#footer{
+    background: #000000;
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+#footer .footer-content{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+#footer .footer-content .footer-menu{
+    margin: 0 60px;
+    list-style: none;
+}
+
+#footer .footer-content .footer-menu-item{
+    margin: 25px 0;
+}
+
+#footer .footer-content .footer-menu p{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.8rem;
+    transition: all 400ms ease;
+}
+
+#footer .footer-content .footer-menu-item:hover{
+    color: #1db954;
+    cursor: pointer;
+}
+/* footer socials (rodapé redes sociais)*/
+.socials{
+    display: flex;
+}
+.socials i{
+    margin: 0 40px;
+    font-size: 1.7rem;
+    transition: all 400ms ease;
+}
+
+.socials i:hover{
+    color: #1db954;
+    cursor: pointer;
+}
+
+/* footer info (informações no rodapé) */
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: auto;
+    width: 60%;
+    color: #919496;
+    font-size: 0.7rem;
+    padding-top: 50px;
+}
+
+.footer-info .footer-info-items{
+    display: flex;
+    list-style: none;
+}
+
+.footer-info .footer-info-items .footer-info-item{
+    margin: 0 10px;
+    font-weight: bold;
+    transition: all 300ms ease;
+}
+
+.footer-info .footer-info-items .footer-info-item:hover{
+    color:#1db954;
+    cursor: pointer;
+}
+
+.footer-info .rights .country{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-info .rights .country .br-flag{
+    height: 20px;
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+}
